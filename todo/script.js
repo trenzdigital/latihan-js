@@ -3,7 +3,7 @@ function tambah() {
     let tambahText = document.getElementById('new_text')
     
     // tambah list baru kedalam ul
-    let newTodo = '<li class="list-group-item"> <span>' + tambahText.value + '</span> </li>'
+    let newTodo = '<li class="list-group-item"> <span>' + tambahText.value + '</span>' + '<span> [x] </span>' + ' </li>'
     todo.insertAdjacentHTML('afterbegin', newTodo)
     // kosongkan fieldnya
     tambahText.value = ''
